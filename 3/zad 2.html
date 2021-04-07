@@ -1,0 +1,31 @@
+<form action="Wyswietlanie.php" method="GET">
+    Ilosc osob :
+    <select name="osoby">
+    <option value="1">1 </option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    </select>
+    <br><br>
+    Uzupelnij dane :<br><br>
+    imie :<input type="text" name="imie" required><br>
+    nazwisko :<input type="text" name="nazwisko" required><br>
+    adress :<input type="text" name="adress" required><br>
+    nr karty :<input type="text" name="karta" maxlength="16" required><br>
+    nr telefonu  :<input type="text" name="tele" maxlength="9" required><br>
+    E-mail :<input type="email" name="email" required><br><br>
+    od dnia :<input type="date" name="od" required><br>
+    do dnia :<input type="date" name="do" required><br>
+    dziecko ?<br><input type="radio" name="dziecko" value="tak"> tak
+            <input type="radio" name="dziecko" value="nie"> nie<br><br>
+    <br><br>
+    Udogodnienia :<br>
+    <select name="udogo" multiple>
+        <option>klimatyzacja</option>
+        <option>miejsce parkingowe</option>
+        <option>lodówka z alhokolem </option>
+    </select>
+
+    <input type="submit" value="Wyslij">
+    <input type="reset" value="Rezygnuje">
+</form>
